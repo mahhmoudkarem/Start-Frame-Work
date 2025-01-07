@@ -1,0 +1,53 @@
+section {
+    background-color: #1ABC9C;
+
+    div {
+        img {
+            width: 250px;
+        }
+
+        h1 {
+            color: white;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 48px;
+            
+        }
+        
+        
+    }
+
+}
+
+h1::after{
+    content: '';
+    position: absolute;
+    background-color: white;
+    bottom: -60%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    height: 4px;
+    width: 200px;
+    z-index: 11;
+}
+
+h1::before{
+    content: '';
+    position: absolute;
+    background-color: #1ABC9C;
+    bottom: -65%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    height: 7px;
+    width: 50px;
+    z-index: 111;
+}
+
+h1 i{
+    position: absolute;
+    bottom: -80%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    font-size: 16px;
+    z-index: 999;
+}

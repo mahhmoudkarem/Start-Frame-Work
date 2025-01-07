@@ -1,0 +1,34 @@
+<div class="test"></div>
+<section class="w-100 d-flex justify-content-center align-items-center text-white p-5">
+    <div class="portfolio-content text-center w-100">
+        <h1 class="text-uppercase position-relative mb-5">portfolio component <span><i class="fa-solid fa-star" ></i></span></h1>
+        <div class="contact  " >
+            <div class="name position-relative">
+                <label [class.typing]="name != '' ">User Name :</label>
+                <br>
+                <input  [(ngModel)]="name" type="text" placeholder="User Name">
+                <br>
+            </div>
+            <div class="mail position-relative">
+                <label [class.typing]="age != '' " >User Age :</label>
+                <br>
+                <input [(ngModel)]="age" type="text" placeholder="User Age">
+                <br>
+            </div>
+            <div class="number position-relative">
+                <label [class.typing]="email != '' " >User E-mail :</label>
+                <br>
+                <input [(ngModel)]="email" type="email" placeholder="User E-mail">
+                <br>
+            </div>
+            <div class="pass position-relative">
+                <label [class.typing]="pass != '' " >User Password :</label>
+                <br>
+                <input [(ngModel)]="pass" type="text" placeholder="User Password">
+                <br>
+            </div>
+            <button class="btn">Send Message</button>
+        </div>
+
+    </div>
+</section>

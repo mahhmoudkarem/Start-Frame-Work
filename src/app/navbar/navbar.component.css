@@ -1,0 +1,21 @@
+body{
+    font-family: "Work Sans", serif;
+}
+
+nav{
+    z-index: 9999;
+    background-color: #2C3E50;
+    a{
+        color: white;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 48px;
+    }
+    ul a{
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .linkActive{
+        background-color: #1ABC9C;
+    }
+}

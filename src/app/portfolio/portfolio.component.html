@@ -1,0 +1,58 @@
+
+<div class="test"></div>
+<section class="w-100 d-flex justify-content-center align-items-center text-white p-5 position-relative">
+    <div class="portfolio-content text-center w-100">
+        <h1 class="text-uppercase position-relative mb-5">portfolio component <span><i class="fa-solid fa-star" ></i></span></h1>
+        
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-md-4">
+                    <div (click)="imgClick(imgesUrl[0] )" class="portfolio-content position-relative">
+                        <img  class="portfolio-img w-100 rounded" [src]="imgesUrl[0]" alt="">
+                        <div class="layer rounded d-flex justify-content-center align-items-center"><i class="fa-solid fa-plus" style="color: #ffffff;"></i></div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div (click)="imgClick(imgesUrl[1] )" class="portfolio-content position-relative">
+                        <img  class="portfolio-img w-100 rounded" [src]="imgesUrl[1]" alt="">
+                        <div class="layer rounded d-flex justify-content-center align-items-center"><i class="fa-solid fa-plus" style="color: #ffffff;"></i></div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div (click)="imgClick(imgesUrl[2] )" class="portfolio-content position-relative">
+                        <img  class="portfolio-img w-100 rounded" [src]="imgesUrl[2]" alt="">
+                        <div class="layer rounded d-flex justify-content-center align-items-center"><i class="fa-solid fa-plus" style="color: #ffffff;"></i></div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div (click)="imgClick(imgesUrl[3] )" class="portfolio-content position-relative">
+                        <img  class="portfolio-img w-100 rounded" [src]="imgesUrl[3]" alt="">
+                        <div class="layer rounded d-flex justify-content-center align-items-center"><i class="fa-solid fa-plus" style="color: #ffffff;"></i></div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div (click)="imgClick(imgesUrl[4] )" class="portfolio-content position-relative">
+                        <img  class="portfolio-img w-100 rounded" [src]="imgesUrl[4]" alt="">
+                        <div class="layer rounded d-flex justify-content-center align-items-center"><i class="fa-solid fa-plus" style="color: #ffffff;"></i></div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div (click)="imgClick(imgesUrl[5] )" class="portfolio-content position-relative">
+                        <img  class="portfolio-img w-100 rounded" [src]="imgesUrl[5]" alt="">
+                        <div class="layer rounded d-flex justify-content-center align-items-center"><i class="fa-solid fa-plus" style="color: #ffffff;"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    @if(isClick){
+        <div (click)="closeLayer($event)" class="container-layer position-absolute d-flex justify-content-center align-items-center">
+            <img class="w-50 img-layer" [src]="imgclick" alt="">
+        </div>
+    }
+</section>
+
+ 
